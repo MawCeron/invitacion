@@ -1,12 +1,39 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React from 'react';
+import WeddingHero from '@/components/WeddingHero';
+import CountdownTimer from '@/components/CountdownTimer';
+import EventDetails from '@/components/EventDetails';
+import RSVPSection from '@/components/RSVPSection';
+import GiftRegistry from '@/components/GiftRegistry';
+import PhotoAlbum from '@/components/PhotoAlbum';
+import MusicPlayer from '@/components/MusicPlayer';
+import WeddingFooter from '@/components/WeddingFooter';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <WeddingHero />
+      
+      {/* Countdown Timer */}
+      <CountdownTimer />
+      
+      {/* Event Details */}
+      <EventDetails />
+      
+      {/* RSVP Section */}
+      <RSVPSection />
+      
+      {/* Gift Registry */}
+      <GiftRegistry />
+      
+      {/* Photo Album */}
+      <PhotoAlbum />
+      
+      {/* Footer */}
+      <WeddingFooter />
+      
+      {/* Music Player */}
+      <MusicPlayer />
     </div>
   );
 };
