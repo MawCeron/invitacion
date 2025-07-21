@@ -1,6 +1,6 @@
 import React from 'react';
 import { Heart } from 'lucide-react';
-import heroImage from '../assets/wedding-hero.jpg';
+import coupleImage from '../assets/couple-silhouette.jpg';
 
 const WeddingHero = () => {
   return (
@@ -8,9 +8,9 @@ const WeddingHero = () => {
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroImage})` }}
+        style={{ backgroundImage: `url(${coupleImage})` }}
       >
-        <div className="absolute inset-0 sunset-gradient opacity-40"></div>
+        <div className="absolute inset-0 bg-background/60 backdrop-blur-[1px]"></div>
       </div>
       
       {/* Content */}
