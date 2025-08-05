@@ -3,23 +3,6 @@ import { MapPin, Calendar, Clock } from 'lucide-react';
 import venuePhoto from '../assets/venue-photo.jpg';
 
 const EventDetails = () => {
-  const details = [
-    {
-      icon: Calendar,
-      title: 'Fecha',
-      info: 'Sábado, 15 de Junio, 2024'
-    },
-    {
-      icon: Clock,
-      title: 'Horario',
-      info: 'Ceremonia: 4:00 PM\nRecepción: 6:00 PM'
-    },
-    {
-      icon: MapPin,
-      title: 'Ubicación',
-      info: 'Jardín de Rosas Manor\n123 Vineyard Lane\nNapa Valley, CA'
-    }
-  ];
 
   return (
     <section className="py-20 px-4 bg-secondary/30">
@@ -44,32 +27,40 @@ const EventDetails = () => {
           </div>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
-          {details.map((detail, index) => {
-            const IconComponent = detail.icon;
+        {/* Event Details Card */}
+        <div className="romantic-card p-8 max-w-2xl mx-auto text-center hover-lift animate-fade-in">
+          <div className="space-y-8">
+            {/* Fecha */}
+            <div className="flex items-center justify-center space-x-4">
+              <Calendar className="w-6 h-6 text-primary" />
+              <div>
+                <h3 className="text-elegant text-lg font-semibold text-foreground">Fecha</h3>
+                <p className="text-muted-foreground">Sábado, 14 de Marzo, 2026</p>
+              </div>
+            </div>
             
-            return (
-              <div 
-                key={detail.title}
-                className="romantic-card p-8 text-center hover-lift"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="flex justify-center mb-6">
-                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
-                    <IconComponent className="w-8 h-8 text-primary" />
-                  </div>
-                </div>
-                
-                <h3 className="text-elegant text-xl font-semibold text-foreground mb-4">
-                  {detail.title}
-                </h3>
-                
-                <p className="text-muted-foreground leading-relaxed whitespace-pre-line">
-                  {detail.info}
+            {/* Horario */}
+            <div className="flex items-center justify-center space-x-4">
+              <Clock className="w-6 h-6 text-primary" />
+              <div>
+                <h3 className="text-elegant text-lg font-semibold text-foreground">Horario</h3>
+                <p className="text-muted-foreground">5:00 PM</p>
+              </div>
+            </div>
+            
+            {/* Ubicación */}
+            <div className="flex items-center justify-center space-x-4">
+              <MapPin className="w-6 h-6 text-primary" />
+              <div>
+                <h3 className="text-elegant text-lg font-semibold text-foreground">Ubicación</h3>
+                <p className="text-muted-foreground">
+                  Verde Olista<br />
+                  Carr. Agostaderito Km 9.3<br />
+                  Salto de los Salado, Aguascalientes, Ags.
                 </p>
               </div>
-            );
-          })}
+            </div>
+          </div>
         </div>
         
         {/* Map/Directions Button */}
