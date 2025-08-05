@@ -36,7 +36,7 @@ const WeddingHero = () => {
           {/* Wedding Date */}
           <div className="romantic-card inline-block px-12 py-6 mb-8">
             <p className="text-elegant text-2xl md:text-3xl font-semibold text-foreground">
-              15 de Junio, 2024
+              14 de Marzo, 2026
             </p>
             <p className="text-muted-foreground text-lg mt-2">
               Reserva la Fecha
