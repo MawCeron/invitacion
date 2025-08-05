@@ -31,7 +31,7 @@ const RSVPSection = () => {
           </h2>
           
           <p className="text-script text-2xl text-primary mb-8">
-            Tu presencia haría nuestro día completo
+            Tu presencia haría nuestro día aún mejor
           </p>
           
           <div className="romantic-card p-8 max-w-2xl mx-auto">
@@ -82,7 +82,7 @@ const RSVPSection = () => {
           </div>
           
           <p className="text-sm text-muted-foreground mt-6">
-            Por favor confirma antes del 1 de Mayo, 2024
+            Por favor confirma antes del 1° de Febrero, 2026
           </p>
         </div>
       </div>

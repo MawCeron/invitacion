@@ -15,60 +15,43 @@ const EventDetails = () => {
             Toda la información importante
           </p>
         </div>
-        
+
         {/* Venue Photo */}
         <div className="mb-16 animate-fade-in">
           <div className="romantic-card overflow-hidden">
-            <img 
-              src={venuePhoto} 
-              alt="Venue" 
+            <img
+              src={venuePhoto}
+              alt="Venue"
               className="w-full h-64 md:h-80 object-cover"
             />
           </div>
         </div>
-        
+
         {/* Event Details Card */}
         <div className="romantic-card p-8 max-w-2xl mx-auto text-center hover-lift animate-fade-in">
           <div className="space-y-8">
             {/* Fecha */}
-            <div className="flex items-center justify-center space-x-4">
-              <Calendar className="w-6 h-6 text-primary" />
-              <div>
-                <h3 className="text-elegant text-lg font-semibold text-foreground">Fecha</h3>
-                <p className="text-muted-foreground">Sábado, 14 de Marzo, 2026</p>
-              </div>
-            </div>
-            
-            {/* Horario */}
-            <div className="flex items-center justify-center space-x-4">
-              <Clock className="w-6 h-6 text-primary" />
-              <div>
-                <h3 className="text-elegant text-lg font-semibold text-foreground">Horario</h3>
-                <p className="text-muted-foreground">5:00 PM</p>
-              </div>
-            </div>
-            
-            {/* Ubicación */}
-            <div className="flex items-center justify-center space-x-4">
-              <MapPin className="w-6 h-6 text-primary" />
-              <div>
-                <h3 className="text-elegant text-lg font-semibold text-foreground">Ubicación</h3>
-                <p className="text-muted-foreground">
-                  Verde Olista<br />
-                  Carr. Agostaderito Km 9.3<br />
-                  Salto de los Salado, Aguascalientes, Ags.
-                </p>
-              </div>
+            <div className="flex flex-col items-center justify-center space-y-4">
+              <h3 className="text-elegant text-2xl font-semibold text-foreground">Verde Olista Terraza y Jardín</h3>
+              <p className="text-muted-foreground">Sábado, 14 de Marzo, 2026<br />5:00 PM</p>
+              <p className="text-muted-foreground">
+                Carr. Agostaderito Km 9.3<br />
+                Salto de los Salado, Aguascalientes, Ags.
+              </p>
             </div>
           </div>
         </div>
-        
+
         {/* Map/Directions Button */}
         <div className="text-center mt-12">
-          <button className="button-primary inline-flex items-center">
-            <MapPin className="w-5 h-5 mr-2" />
-            Obtener Direcciones
-          </button>
+          <a href='https://maps.app.goo.gl/gMAG2Rv9W2pPDNFu7'
+            target='_blank'
+            rel="noopener noreferrer">
+            <button className="button-primary inline-flex items-center">
+              <MapPin className="w-5 h-5 mr-2" />
+              Obtener Direcciones
+            </button>
+          </a>
         </div>
       </div>
     </section>

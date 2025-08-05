@@ -14,7 +14,7 @@ const DressCode = () => {
             Código de Vestimenta
           </h2>
           <p className="text-script text-2xl text-primary">
-            Vistamos elegantes para esta ocasión especial
+            ¡Queremos que luzcas increíble en cada foto!
           </p>
         </div>
         
@@ -32,10 +32,9 @@ const DressCode = () => {
             </h3>
             
             <ul className="text-muted-foreground leading-relaxed space-y-2 text-left">
-              <li>• Traje formal o smoking</li>
+              <li>• Traje formal</li>
               <li>• Camisa de vestir</li>
               <li>• Corbata o moño</li>
-              <li>• Zapatos de vestir</li>
             </ul>
           </div>
           
@@ -53,7 +52,6 @@ const DressCode = () => {
             
             <ul className="text-muted-foreground leading-relaxed space-y-2 text-left">
               <li>• Vestido formal o elegante</li>
-              <li>• Largo midi o largo</li>
               <li>• Zapatos cómodos</li>
               <li>• Accesorios discretos</li>
             </ul>
@@ -63,8 +61,8 @@ const DressCode = () => {
         {/* Important Note */}
         <div className="romantic-card p-6 bg-accent/20 border-l-4 border-accent">
           <p className="text-center text-foreground font-medium">
-            <strong>Importante:</strong> Por favor evita los tonos blancos, beige y rojos. 
-            Estos colores están reservados para los novios y la decoración.
+            <strong>Importante:</strong> Te pedimos amablemente evitar los tonos blanco, beige y rojo. 
+            
           </p>
         </div>
       </div>

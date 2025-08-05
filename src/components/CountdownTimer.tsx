@@ -46,7 +46,7 @@ const CountdownTimer = () => {
           </div>
           
           <h2 className="text-elegant text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Cuenta Regresiva al Amor Eterno
+            Cuenta Regresiva
           </h2>
           
           <p className="text-script text-2xl text-primary mb-12">

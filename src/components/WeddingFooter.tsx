@@ -42,7 +42,7 @@ const WeddingFooter = () => {
               </a>
             </p>
             <p className="text-xs text-muted-foreground">
-              Sitio Web de Boda • 15 de Junio, 2024 • Jardín de Rosas Manor
+              15 de Junio, 2024 • Verde Olista Terraza y Jardín
             </p>
           </div>
         </div>

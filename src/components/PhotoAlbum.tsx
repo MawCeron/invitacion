@@ -15,11 +15,11 @@ const PhotoAlbum = () => {
           </h2>
           
           <p className="text-script text-2xl text-primary mb-6">
-            Captura cada momento hermoso
+            Captura cada momento memorable
           </p>
           
           <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Ayúdanos a preservar la magia de nuestro día especial compartiendo tus fotos y videos
+            Ayúdanos a preservar la magia de este día especial compartiendo tus fotos y videos
           </p>
         </div>
         
@@ -73,7 +73,7 @@ const PhotoAlbum = () => {
           
           <div className="grid md:grid-cols-2 gap-4 text-sm text-muted-foreground">
             <div>
-              <p className="mb-2">📱 <strong>Móvil amigable:</strong> Usa el enlace del álbum en tu teléfono</p>
+              <p className="mb-2">📱 <strong>Compatible con celulares:</strong> Usa el enlace del álbum en tu teléfono</p>
               <p className="mb-2">📸 <strong>Todos los formatos bienvenidos:</strong> Fotos, videos y boomerangs</p>
             </div>
             <div>

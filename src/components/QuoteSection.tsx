@@ -11,9 +11,7 @@ const QuoteSection = () => {
           </div>
           
           <blockquote className="text-elegant text-2xl md:text-3xl font-medium text-foreground mb-8 leading-relaxed">
-            "En este día especial, prometemos amarnos, respetarnos y apoyarnos 
-            mutuamente en todas las aventuras que la vida nos depare. 
-            Juntos escribiremos nuestra historia de amor para toda la eternidad."
+            "Lo pensamos, lo meditamos, lo analizamos... y finalmente dijimos: ¡Si lo vamos a hacer, hay que hacerlo ya!"
           </blockquote>
           
           <cite className="text-script text-xl text-primary">

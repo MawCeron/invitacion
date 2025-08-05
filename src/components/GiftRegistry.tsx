@@ -40,7 +40,7 @@ const GiftRegistry = () => {
           </p>
           
           <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Si deseas obsequiarnos algo, nos hemos registrado en algunos de nuestros lugares favoritos
+            Pero, si deseas obsequiarnos algo, no nos quejamos
           </p>
         </div>
         
