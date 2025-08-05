@@ -72,7 +72,7 @@ const GiftRegistry = () => {
         <div className="text-center mt-12">
           <div className="romantic-card inline-block p-6">
             <p className="text-muted-foreground">
-              💕 <em>Su amor y presencia significan el mundo para nosotros</em> 💕
+              💕 <em>Su amor y presencia significan mucho para nosotros</em> 💕
             </p>
           </div>
         </div>
