@@ -1,6 +1,6 @@
 import React from 'react';
 import { Heart } from 'lucide-react';
-import coupleImage from '../assets/couple-silhouette.jpg';
+import coupleImage from '../assets/lucymaw.jpg';
 
 const WeddingHero = () => {
   return (
