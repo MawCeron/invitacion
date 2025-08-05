@@ -31,10 +31,10 @@ const CountdownTimer = () => {
   }, []);
 
   const timeUnits = [
-    { label: 'Days', value: timeLeft.days },
-    { label: 'Hours', value: timeLeft.hours },
-    { label: 'Minutes', value: timeLeft.minutes },
-    { label: 'Seconds', value: timeLeft.seconds }
+    { label: 'Días', value: timeLeft.days },
+    { label: 'Horas', value: timeLeft.hours },
+    { label: 'Minutos', value: timeLeft.minutes },
+    { label: 'Segundos', value: timeLeft.seconds }
   ];
 
   return (
@@ -46,11 +46,11 @@ const CountdownTimer = () => {
           </div>
           
           <h2 className="text-elegant text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Countdown to Forever
+            Cuenta Regresiva al Amor Eterno
           </h2>
           
           <p className="text-script text-2xl text-primary mb-12">
-            The big day is approaching
+            El gran día se acerca
           </p>
           
           {/* Countdown Display */}

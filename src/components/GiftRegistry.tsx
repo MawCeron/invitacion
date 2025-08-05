@@ -4,20 +4,20 @@ import { Gift, ExternalLink } from 'lucide-react';
 const GiftRegistry = () => {
   const registries = [
     {
-      store: 'Target',
-      description: 'Home essentials and décor',
+      store: 'Liverpool',
+      description: 'Artículos para el hogar y decoración',
       url: '#',
-      logo: '🎯'
+      logo: '🏠'
     },
     {
-      store: 'Williams Sonoma',
-      description: 'Kitchen and dining',
+      store: 'El Palacio de Hierro',
+      description: 'Cocina y comedor',
       url: '#',
       logo: '🍽️'
     },
     {
-      store: 'Honeymoon Fund',
-      description: 'Help us create memories in Italy',
+      store: 'Fondo de Luna de Miel',
+      description: 'Ayúdanos a crear recuerdos en Italia',
       url: '#',
       logo: '✈️'
     }
@@ -32,15 +32,15 @@ const GiftRegistry = () => {
           </div>
           
           <h2 className="text-elegant text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Gift Registry
+            Mesa de Regalos
           </h2>
           
           <p className="text-script text-2xl text-primary mb-6">
-            Your presence is the greatest gift
+            Tu presencia es el mejor regalo
           </p>
           
           <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            If you'd like to honor us with a gift, we've registered at a few of our favorite places
+            Si deseas obsequiarnos algo, nos hemos registrado en algunos de nuestros lugares favoritos
           </p>
         </div>
         
@@ -61,8 +61,8 @@ const GiftRegistry = () => {
                 {registry.description}
               </p>
               
-              <button className="button-secondary group-hover:bg-primary group-hover:text-primary-foreground">
-                View Registry
+              <button className="button-secondary group-hover:bg-primary group-hover:text-primary-foreground inline-flex items-center justify-center">
+                Ver Lista
                 <ExternalLink className="w-4 h-4 ml-2" />
               </button>
             </div>
@@ -72,7 +72,7 @@ const GiftRegistry = () => {
         <div className="text-center mt-12">
           <div className="romantic-card inline-block p-6">
             <p className="text-muted-foreground">
-              💕 <em>Your love and presence mean the world to us</em> 💕
+              💕 <em>Su amor y presencia significan el mundo para nosotros</em> 💕
             </p>
           </div>
         </div>

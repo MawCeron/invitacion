@@ -1,27 +1,23 @@
 import React from 'react';
-import { MapPin, Calendar, Clock, Shirt } from 'lucide-react';
+import { MapPin, Calendar, Clock } from 'lucide-react';
+import venuePhoto from '../assets/venue-photo.jpg';
 
 const EventDetails = () => {
   const details = [
     {
       icon: Calendar,
-      title: 'Date',
-      info: 'Saturday, June 15th, 2024'
+      title: 'Fecha',
+      info: 'Sábado, 15 de Junio, 2024'
     },
     {
       icon: Clock,
-      title: 'Time',
-      info: 'Ceremony: 4:00 PM\nReception: 6:00 PM'
+      title: 'Horario',
+      info: 'Ceremonia: 4:00 PM\nRecepción: 6:00 PM'
     },
     {
       icon: MapPin,
-      title: 'Location',
-      info: 'Rose Garden Manor\n123 Vineyard Lane\nNapa Valley, CA'
-    },
-    {
-      icon: Shirt,
-      title: 'Dress Code',
-      info: 'Formal Attire\nBlush & Navy Preferred'
+      title: 'Ubicación',
+      info: 'Jardín de Rosas Manor\n123 Vineyard Lane\nNapa Valley, CA'
     }
   ];
 
@@ -30,14 +26,25 @@ const EventDetails = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-elegant text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Wedding Details
+            ¿Cuándo y Dónde?
           </h2>
           <p className="text-script text-2xl text-primary">
-            All the important information
+            Toda la información importante
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* Venue Photo */}
+        <div className="mb-16 animate-fade-in">
+          <div className="romantic-card overflow-hidden">
+            <img 
+              src={venuePhoto} 
+              alt="Venue" 
+              className="w-full h-64 md:h-80 object-cover"
+            />
+          </div>
+        </div>
+        
+        <div className="grid md:grid-cols-3 gap-8">
           {details.map((detail, index) => {
             const IconComponent = detail.icon;
             
@@ -67,9 +74,9 @@ const EventDetails = () => {
         
         {/* Map/Directions Button */}
         <div className="text-center mt-12">
-          <button className="button-primary">
+          <button className="button-primary inline-flex items-center">
             <MapPin className="w-5 h-5 mr-2" />
-            Get Directions
+            Obtener Direcciones
           </button>
         </div>
       </div>

@@ -25,21 +25,21 @@ const WeddingHero = () => {
           
           {/* Main Heading */}
           <h1 className="text-elegant text-6xl md:text-8xl lg:text-9xl font-bold text-foreground mb-4">
-            Sarah & James
+            Lucy & Maw
           </h1>
           
           {/* Romantic Script */}
           <p className="text-script text-3xl md:text-4xl text-primary mb-8">
-            are getting married
+            se casan
           </p>
           
           {/* Wedding Date */}
           <div className="romantic-card inline-block px-12 py-6 mb-8">
             <p className="text-elegant text-2xl md:text-3xl font-semibold text-foreground">
-              June 15th, 2024
+              15 de Junio, 2024
             </p>
             <p className="text-muted-foreground text-lg mt-2">
-              Save the Date
+              Reserva la Fecha
             </p>
           </div>
           

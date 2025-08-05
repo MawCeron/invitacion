@@ -15,34 +15,34 @@ const WeddingFooter = () => {
           
           {/* Main Message */}
           <h2 className="text-script text-4xl md:text-5xl text-primary mb-6">
-            Thank you for being part of our love story
+            Gracias por ser parte de nuestra historia de amor
           </h2>
           
           <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
-            Your love, support, and presence mean everything to us. We can't wait to celebrate 
-            this new chapter of our lives with you.
+            Su amor, apoyo y presencia lo significan todo para nosotros. No podemos esperar a celebrar 
+            este nuevo capítulo de nuestras vidas con ustedes.
           </p>
           
           {/* Couple Signature */}
           <div className="romantic-card inline-block p-8">
             <p className="text-script text-3xl text-primary">
-              With all our love,
+              Con todo nuestro amor,
             </p>
             <p className="text-elegant text-2xl font-semibold text-foreground mt-2">
-              Sarah & James
+              Lucy & Maw
             </p>
           </div>
           
           {/* Contact Info */}
           <div className="mt-12 pt-8 border-t border-border/30">
             <p className="text-sm text-muted-foreground mb-2">
-              Questions? Contact us at{' '}
-              <a href="mailto:sarahandjames@wedding.com" className="text-primary hover:text-primary/80 transition-colors">
-                sarahandjames@wedding.com
+              ¿Preguntas? Contáctanos en{' '}
+              <a href="mailto:lucyymaw@boda.com" className="text-primary hover:text-primary/80 transition-colors">
+                lucyymaw@boda.com
               </a>
             </p>
             <p className="text-xs text-muted-foreground">
-              Wedding Website • June 15th, 2024 • Rose Garden Manor
+              Sitio Web de Boda • 15 de Junio, 2024 • Jardín de Rosas Manor
             </p>
           </div>
         </div>

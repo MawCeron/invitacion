@@ -1,7 +1,9 @@
 import React from 'react';
 import WeddingHero from '@/components/WeddingHero';
 import CountdownTimer from '@/components/CountdownTimer';
+import QuoteSection from '@/components/QuoteSection';
 import EventDetails from '@/components/EventDetails';
+import DressCode from '@/components/DressCode';
 import RSVPSection from '@/components/RSVPSection';
 import GiftRegistry from '@/components/GiftRegistry';
 import PhotoAlbum from '@/components/PhotoAlbum';
@@ -17,8 +19,14 @@ const Index = () => {
       {/* Countdown Timer */}
       <CountdownTimer />
       
+      {/* Quote Section */}
+      <QuoteSection />
+      
       {/* Event Details */}
       <EventDetails />
+      
+      {/* Dress Code */}
+      <DressCode />
       
       {/* RSVP Section */}
       <RSVPSection />
