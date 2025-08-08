@@ -1,5 +1,6 @@
 import React from 'react';
 import { Camera, Upload, Eye } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const PhotoAlbum = () => {
   return (
@@ -33,10 +34,10 @@ const PhotoAlbum = () => {
             Sube tus fotos favoritas y mira las que capturaron nuestros seres queridos.
           </p>
 
-          <button className="button-primary inline-flex items-center justify-center">
+          <Link to="/album" className="button-primary inline-flex items-center justify-center">
             <Eye className="w-5 h-5 mr-2" />
-            Ir al Album
-          </button>
+            Ir al Álbum
+          </Link>
         </div>
 
         {/* Instructions */}
