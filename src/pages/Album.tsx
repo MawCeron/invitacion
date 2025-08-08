@@ -182,7 +182,7 @@ const Album: React.FC = () => {
 
       {/* Lightbox */}
       <Dialog open={open} onOpenChange={setOpen}>
-        <DialogContent className="max-w-4xl p-2 sm:p-4">
+        <DialogContent className="max-w-4xl p-2 sm:p-4 border-0 bg-transparent shadow-none [&>button]:hidden">
           <DialogHeader>
             <DialogTitle className="sr-only">Contenido multimedia</DialogTitle>
           </DialogHeader>
@@ -192,7 +192,7 @@ const Album: React.FC = () => {
                 <img
                   src={current.src}
                   alt="Foto ampliada del álbum"
-                  className="w-full h-full object-contain rounded-md"
+                  className="max-h-screen w-auto max-w-full object-contain rounded-md mx-auto"
                 />
               ) : (
                 <video
