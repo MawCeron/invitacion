@@ -12,36 +12,36 @@
     --background: 20 40% 98%; /* Soft Cream */
     --foreground: 120 20% 30%; /* Deep Sage */
 
-    --card: 350 30% 95%; /* Light Blush */
-    --card-foreground: 120 20% 30%;
+    --card: 120 20% 96%; /* Light Sage */
+    --card-foreground: 120 25% 25%;
 
-    --popover: 350 30% 95%; /* Light Blush */
-    --popover-foreground: 120 20% 30%;
+    --popover: 120 20% 96%; /* Light Sage */
+    --popover-foreground: 120 25% 25%;
 
     /* Sage Green primary */
     --primary: 120 25% 55%; /* Sage Green */
     --primary-foreground: 20 40% 98%; /* Soft Cream */
     --primary-soft: 120 20% 75%; /* Light Sage */
 
-    /* Blush Pink secondary */
-    --secondary: 340 20% 96%; /* Subtle Blush */
-    --secondary-foreground: 120 20% 30%;
+    /* Sage secondary (monochromatic) */
+    --secondary: 120 18% 92%; /* Pale Sage */
+    --secondary-foreground: 120 25% 25%;
 
     /* Muted tones */
-    --muted: 340 18% 96%; /* Very Subtle Blush */
-    --muted-foreground: 120 15% 45%;
+    --muted: 120 14% 95%; /* Very Light Sage */
+    --muted-foreground: 120 15% 40%;
 
-    /* Blush accent */
-    --accent: 340 28% 85%; /* Soft Blush */
+    /* Accent (deeper sage) */
+    --accent: 120 28% 60%; /* Mid Sage */
     --accent-foreground: 20 40% 98%;
-    --accent-gold: 340 22% 82%; /* Rose Blush */
+    --accent-gold: 120 22% 52%; /* Deep Sage */
 
     --destructive: 0 70% 55%;
     --destructive-foreground: 20 60% 99%;
 
     --border: 20 20% 88%;
     --input: 20 20% 92%;
-    --ring: 350 30% 60%;
+    --ring: 120 30% 55%;
 
     --radius: 0.75rem;
 
