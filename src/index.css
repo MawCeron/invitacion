@@ -24,17 +24,17 @@
     --primary-soft: 120 20% 75%; /* Light Sage */
 
     /* Blush Pink secondary */
-    --secondary: 340 40% 85%; /* Blush Pink */
+    --secondary: 340 20% 96%; /* Subtle Blush */
     --secondary-foreground: 120 20% 30%;
 
     /* Muted tones */
-    --muted: 340 25% 90%; /* Very Light Blush */
+    --muted: 340 18% 96%; /* Very Subtle Blush */
     --muted-foreground: 120 15% 45%;
 
     /* Blush accent */
-    --accent: 340 60% 70%; /* Blush Pink */
+    --accent: 340 28% 85%; /* Soft Blush */
     --accent-foreground: 20 40% 98%;
-    --accent-gold: 340 50% 65%; /* Rose Pink */
+    --accent-gold: 340 22% 82%; /* Rose Blush */
 
     --destructive: 0 70% 55%;
     --destructive-foreground: 20 60% 99%;
