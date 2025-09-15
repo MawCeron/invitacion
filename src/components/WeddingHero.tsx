@@ -10,7 +10,7 @@ const WeddingHero = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${coupleImage})` }}
       >
-        <div className="absolute inset-0 bg-background/60 backdrop-blur-[1px]"></div>
+        <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px]"></div>
       </div>
       
       {/* Content */}
