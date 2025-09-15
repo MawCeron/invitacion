@@ -6,7 +6,7 @@ const GiftRegistry = () => {
   const registries = [
     {
       store: 'Liverpool',
-      description: '51764805',
+      description: 'No. de Evento: 51764805',
       url: 'https://mesaderegalos.liverpool.com.mx/milistaderegalos/51764805',
       logo: liverpoolLogo
     }
