@@ -41,7 +41,7 @@ const GiftRegistry = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex justify-center mb-4">
-                <img src={registry.logo} alt="Liverpool logo" className="w-8 h-8" />
+                <img src={registry.logo} alt="Liverpool logo" width={32} height={32} />
               </div>
               
               <h3 className="text-elegant text-xl font-semibold text-foreground mb-2">
