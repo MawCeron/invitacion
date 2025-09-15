@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { Play, Pause, Volume2, VolumeX } from 'lucide-react';
+import MakeYouFeelMyLove from '@/assets/MakeYouFeelMyLove.mp3';
 
 const MusicPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -27,9 +28,8 @@ const MusicPlayer = () => {
   return (
     <div className="fixed bottom-6 right-6 z-50">
       <div className="romantic-card p-4 flex items-center space-x-3 bg-card/95 backdrop-blur-sm">
-        {/* Note: In a real implementation, you would add an actual audio file */}
         <audio ref={audioRef} loop>
-          {/* <source src="/path-to-your-wedding-song.mp3" type="audio/mpeg" /> */}
+          <source src={MakeYouFeelMyLove} type="audio/mpeg" />
         </audio>
         
         <button
@@ -57,8 +57,8 @@ const MusicPlayer = () => {
         </button>
         
         <div className="text-sm text-muted-foreground">
-          <div className="font-medium">Perfect</div>
-          <div className="text-xs">Ed Sheeran</div>
+          <div className="font-medium">Make You Feel My Love</div>
+          <div className="text-xs">Bob Dylan</div>
         </div>
       </div>
     </div>
