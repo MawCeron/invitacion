@@ -81,7 +81,7 @@ const MusicPlayer = () => {
         
         <div className="text-sm text-muted-foreground">
           <div className="font-medium">Make You Feel My Love</div>
-          <div className="text-xs">Bob Dylan</div>
+          <div className="text-xs">Adele</div>
         </div>
       </div>
     </div>
