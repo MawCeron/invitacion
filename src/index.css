@@ -8,14 +8,14 @@
 
 @layer base {
   :root {
-    /* Wedding color palette - Custom Sage & Cream */
-    --background: 39 24% 78%; /* Warm Cream */
-    --foreground: 132 11% 36%; /* Deep Sage Green */
+    /* Wedding color palette - Custom Sage & Cream with White */
+    --background: 0 0% 100%; /* Pure White Background */
+    --foreground: 132 11% 36%; /* Deep Sage Green Text */
 
-    --card: 100 16% 89%; /* Light Sage */
+    --card: 0 0% 100%; /* White Cards */
     --card-foreground: 132 11% 36%;
 
-    --popover: 100 16% 89%; /* Light Sage */
+    --popover: 0 0% 100%; /* White Popover */
     --popover-foreground: 132 11% 36%;
 
     /* Sage Green primary */
@@ -23,13 +23,13 @@
     --primary-foreground: 0 0% 100%; /* Pure White */
     --primary-soft: 100 16% 89%; /* Light Sage */
 
-    /* Sage secondary (monochromatic) */
-    --secondary: 100 16% 89%; /* Light Sage */
+    /* Cream secondary */
+    --secondary: 39 24% 78%; /* Warm Cream */
     --secondary-foreground: 132 11% 36%;
 
     /* Muted tones */
     --muted: 100 16% 89%; /* Light Sage */
-    --muted-foreground: 93 14% 56%;
+    --muted-foreground: 132 11% 36%;
 
     /* Accent (deep sage) */
     --accent: 132 11% 36%; /* Deep Sage */
@@ -40,7 +40,7 @@
     --destructive-foreground: 0 0% 100%;
 
     --border: 100 16% 89%;
-    --input: 100 16% 89%;
+    --input: 0 0% 100%;
     --ring: 93 14% 56%;
 
     --radius: 0.75rem;
