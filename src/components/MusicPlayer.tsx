@@ -50,7 +50,7 @@ const MusicPlayer = () => {
 
   return (
     <div className="fixed bottom-6 right-6 z-50">
-      <div className="romantic-card p-4 flex items-center space-x-3 bg-card/95 backdrop-blur-sm">
+      <div className="romantic-card p-4 flex items-center space-x-3 bg-card/95 backdrop-blur-sm shadow-lg">
         <audio ref={audioRef} loop>
           <source src={MakeYouFeelMyLove} type="audio/mpeg" />
         </audio>
