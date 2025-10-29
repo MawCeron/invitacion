@@ -24,7 +24,7 @@ const WeddingHero = () => {
           </div>
           
           {/* Main Heading */}
-          <h1 className="text-elegant text-6xl md:text-8xl lg:text-9xl font-bold text-foreground mb-4">
+          <h1 className="text-elegant text-6xl md:text-8xl lg:text-9xl font-bold text-primary mb-4">
             Lucy & Maw
           </h1>
           

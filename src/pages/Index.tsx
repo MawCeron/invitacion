@@ -34,14 +34,8 @@ const Index = () => {
       {/* Gift Registry */}
       <GiftRegistry />
       
-      {/* Photo Album */}
-      <PhotoAlbum />
-      
       {/* Footer */}
       <WeddingFooter />
-      
-      {/* Music Player */}
-      <MusicPlayer />
     </div>
   );
 };

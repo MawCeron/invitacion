@@ -36,10 +36,7 @@ const WeddingFooter = () => {
           {/* Contact Info */}
           <div className="mt-12 pt-8 border-t border-border/30">
             <p className="text-sm text-muted-foreground mb-2">
-              ¿Preguntas? Contáctanos en{' '}
-              <a href="mailto:lucyymaw@boda.com" className="text-primary hover:text-primary/80 transition-colors">
-                lucyymaw@boda.com
-              </a>
+              ¿Preguntas? Puedes contactarnos para aclararlas.
             </p>
             <p className="text-xs text-muted-foreground">
               15 de Junio, 2024 • Verde Olista Terraza y Jardín
