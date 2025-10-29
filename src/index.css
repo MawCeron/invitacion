@@ -8,40 +8,40 @@
 
 @layer base {
   :root {
-    /* Wedding color palette - Sage Green & Blush Pink */
-    --background: 20 40% 98%; /* Soft Cream */
-    --foreground: 120 20% 30%; /* Deep Sage */
+    /* Wedding color palette - Custom Sage & Cream */
+    --background: 39 24% 78%; /* Warm Cream */
+    --foreground: 132 11% 36%; /* Deep Sage Green */
 
-    --card: 120 20% 96%; /* Light Sage */
-    --card-foreground: 120 25% 25%;
+    --card: 100 16% 89%; /* Light Sage */
+    --card-foreground: 132 11% 36%;
 
-    --popover: 120 20% 96%; /* Light Sage */
-    --popover-foreground: 120 25% 25%;
+    --popover: 100 16% 89%; /* Light Sage */
+    --popover-foreground: 132 11% 36%;
 
     /* Sage Green primary */
-    --primary: 120 25% 55%; /* Sage Green */
-    --primary-foreground: 20 40% 98%; /* Soft Cream */
-    --primary-soft: 120 20% 75%; /* Light Sage */
+    --primary: 93 14% 56%; /* Medium Sage */
+    --primary-foreground: 0 0% 100%; /* Pure White */
+    --primary-soft: 100 16% 89%; /* Light Sage */
 
     /* Sage secondary (monochromatic) */
-    --secondary: 120 18% 92%; /* Pale Sage */
-    --secondary-foreground: 120 25% 25%;
+    --secondary: 100 16% 89%; /* Light Sage */
+    --secondary-foreground: 132 11% 36%;
 
     /* Muted tones */
-    --muted: 120 14% 95%; /* Very Light Sage */
-    --muted-foreground: 120 15% 40%;
+    --muted: 100 16% 89%; /* Light Sage */
+    --muted-foreground: 93 14% 56%;
 
-    /* Accent (deeper sage) */
-    --accent: 120 28% 60%; /* Mid Sage */
-    --accent-foreground: 20 40% 98%;
-    --accent-gold: 120 22% 52%; /* Deep Sage */
+    /* Accent (deep sage) */
+    --accent: 132 11% 36%; /* Deep Sage */
+    --accent-foreground: 0 0% 100%;
+    --accent-gold: 93 14% 56%; /* Medium Sage */
 
     --destructive: 0 70% 55%;
-    --destructive-foreground: 20 60% 99%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 20 20% 88%;
-    --input: 20 20% 92%;
-    --ring: 120 30% 55%;
+    --border: 100 16% 89%;
+    --input: 100 16% 89%;
+    --ring: 93 14% 56%;
 
     --radius: 0.75rem;
 
