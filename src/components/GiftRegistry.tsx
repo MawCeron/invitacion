@@ -1,25 +1,14 @@
 import React from 'react';
 import { Gift, ExternalLink } from 'lucide-react';
+import liverpool from "../assets/liverpool.png"
 
 const GiftRegistry = () => {
   const registries = [
     {
       store: 'Liverpool',
-      description: 'Artículos para el hogar y decoración',
-      url: '#',
-      logo: '🏠'
-    },
-    {
-      store: 'El Palacio de Hierro',
-      description: 'Cocina y comedor',
-      url: '#',
-      logo: '🍽️'
-    },
-    {
-      store: 'Fondo de Luna de Miel',
-      description: 'Ayúdanos a crear recuerdos en Italia',
-      url: '#',
-      logo: '✈️'
+      description: 'Nº Evento: 51764805',
+      url: 'https://mesaderegalos.liverpool.com.mx/milistaderegalos/51764805',
+      logo: liverpool
     }
   ];
 
@@ -44,14 +33,14 @@ const GiftRegistry = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-1 gap-8 max-w-4xl mx-auto">
           {registries.map((registry, index) => (
             <div 
               key={registry.store}
               className="romantic-card p-8 text-center hover-lift group"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="text-4xl mb-4">{registry.logo}</div>
+              <div className="text-4xl mb-4"><img src={registry.logo} alt='Liverpool Logo' /></div>
               
               <h3 className="text-elegant text-xl font-semibold text-foreground mb-2">
                 {registry.store}
@@ -63,7 +52,7 @@ const GiftRegistry = () => {
               
               <button className="button-secondary group-hover:bg-primary group-hover:text-primary-foreground inline-flex items-center justify-center">
                 Ver Lista
-                <ExternalLink className="w-4 h-4 ml-2" />
+                <ExternalLink to={registry.url} className="w-4 h-4 ml-2" />
               </button>
             </div>
           ))}
