@@ -19,7 +19,7 @@ const RSVPSection = () => {
   };
 
   return (
-    <section className="py-20 px-4">
+    <section className="py-20 px-4 romantic-gradient">
       <div className="max-w-4xl mx-auto text-center">
         <div className="animate-fade-in">
           <div className="flex justify-center mb-6">

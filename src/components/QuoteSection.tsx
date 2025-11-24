@@ -3,7 +3,7 @@ import { Quote } from 'lucide-react';
 
 const QuoteSection = () => {
   return (
-    <section className="py-20 px-4 bg-secondary/50">
+    <section className="py-20 px-4 bg-secondary/70">
       <div className="max-w-4xl mx-auto text-center">
         <div className="animate-fade-in">
           <div className="flex justify-center mb-8">

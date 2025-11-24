@@ -10,7 +10,7 @@ const WeddingHero = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${coupleImage})` }}
       >
-        <div className="absolute inset-0 bg-background/60 backdrop-blur-[1px]"></div>
+        <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px]"></div>
       </div>
       
       {/* Content */}
@@ -24,7 +24,7 @@ const WeddingHero = () => {
           </div>
           
           {/* Main Heading */}
-          <h1 className="text-elegant text-6xl md:text-8xl lg:text-9xl font-bold text-foreground mb-4">
+          <h1 className="text-elegant text-6xl md:text-8xl lg:text-9xl font-bold text-primary mb-4">
             Lucy & Maw
           </h1>
           

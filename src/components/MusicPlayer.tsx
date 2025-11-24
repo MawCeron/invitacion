@@ -1,10 +1,34 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Play, Pause, Volume2, VolumeX } from 'lucide-react';
+import MakeYouFeelMyLove from '@/assets/MakeYouFeelMyLove.mp3';
 
 const MusicPlayer = () => {
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
   const [isMuted, setIsMuted] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (audio) {
+      // Intentar reproducir automáticamente
+      audio.play().catch(() => {
+        // Si falla (ej. política del navegador), mantener el estado en false
+        setIsPlaying(false);
+      });
+
+      // Eventos para sincronizar el estado
+      const handlePlay = () => setIsPlaying(true);
+      const handlePause = () => setIsPlaying(false);
+
+      audio.addEventListener('play', handlePlay);
+      audio.addEventListener('pause', handlePause);
+
+      return () => {
+        audio.removeEventListener('play', handlePlay);
+        audio.removeEventListener('pause', handlePause);
+      };
+    }
+  }, []);
 
   const togglePlay = () => {
     if (audioRef.current) {
@@ -26,10 +50,9 @@ const MusicPlayer = () => {
 
   return (
     <div className="fixed bottom-6 right-6 z-50">
-      <div className="romantic-card p-4 flex items-center space-x-3 bg-card/95 backdrop-blur-sm">
-        {/* Note: In a real implementation, you would add an actual audio file */}
+      <div className="romantic-card p-4 flex items-center space-x-3 bg-card/95 backdrop-blur-sm shadow-lg">
         <audio ref={audioRef} loop>
-          {/* <source src="/path-to-your-wedding-song.mp3" type="audio/mpeg" /> */}
+          <source src={MakeYouFeelMyLove} type="audio/mpeg" />
         </audio>
         
         <button
@@ -57,8 +80,8 @@ const MusicPlayer = () => {
         </button>
         
         <div className="text-sm text-muted-foreground">
-          <div className="font-medium">Perfect</div>
-          <div className="text-xs">Ed Sheeran</div>
+          <div className="font-medium">Make You Feel My Love</div>
+          <div className="text-xs">Adele</div>
         </div>
       </div>
     </div>
