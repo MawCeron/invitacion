@@ -1,24 +1,14 @@
 import React from 'react';
 import { Gift, ExternalLink } from 'lucide-react';
-<<<<<<< HEAD
-import liverpool from "../assets/liverpool.png"
-=======
 import liverpoolLogo from '@/assets/liverpool.png';
->>>>>>> 08e1da801490aa612fa63d5f76fb8c9a3d09bbda
 
 const GiftRegistry = () => {
   const registries = [
     {
       store: 'Liverpool',
-<<<<<<< HEAD
-      description: 'Nº Evento: 51764805',
-      url: 'https://mesaderegalos.liverpool.com.mx/milistaderegalos/51764805',
-      logo: liverpool
-=======
       description: 'No. de Evento: 51764805',
       url: 'https://mesaderegalos.liverpool.com.mx/milistaderegalos/51764805',
       logo: liverpoolLogo
->>>>>>> 08e1da801490aa612fa63d5f76fb8c9a3d09bbda
     }
   ];
 
@@ -43,24 +33,16 @@ const GiftRegistry = () => {
           </p>
         </div>
         
-<<<<<<< HEAD
-        <div className="grid md:grid-cols-1 gap-8 max-w-4xl mx-auto">
-=======
         <div className="grid grid-cols-1 gap-8 max-w-md mx-auto">
->>>>>>> 08e1da801490aa612fa63d5f76fb8c9a3d09bbda
           {registries.map((registry, index) => (
             <div 
               key={registry.store}
               className="romantic-card p-8 text-center hover-lift group"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-<<<<<<< HEAD
-              <div className="text-4xl mb-4"><img src={registry.logo} alt='Liverpool Logo' /></div>
-=======
               <div className="flex justify-center mb-4">
                 <img src={registry.logo} alt="Liverpool logo" width={50} height={50} />
               </div>
->>>>>>> 08e1da801490aa612fa63d5f76fb8c9a3d09bbda
               
               <h3 className="text-elegant text-xl font-semibold text-foreground mb-2">
                 {registry.store}
@@ -77,13 +59,8 @@ const GiftRegistry = () => {
                 className="button-secondary group-hover:bg-primary group-hover:text-primary-foreground inline-flex items-center justify-center"
               >
                 Ver Lista
-<<<<<<< HEAD
-                <ExternalLink to={registry.url} className="w-4 h-4 ml-2" />
-              </button>
-=======
                 <ExternalLink className="w-4 h-4 ml-2" />
               </a>
->>>>>>> 08e1da801490aa612fa63d5f76fb8c9a3d09bbda
             </div>
           ))}
         </div>
