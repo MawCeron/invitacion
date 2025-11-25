@@ -1,27 +1,31 @@
 import React from 'react';
-import { Clock } from 'lucide-react';
+import { Clock, Heart, Wine, UtensilsCrossed, Music } from 'lucide-react';
 
 const Schedule = () => {
   const events = [
     {
       time: '5:00 PM',
       title: 'Ceremonia Civil',
-      description: 'Ceremonia de boda civil'
+      description: 'Ceremonia de boda civil',
+      icon: Heart
     },
     {
       time: '6:00 PM',
       title: 'Recepción',
-      description: 'Cóctel de bienvenida'
+      description: 'Cóctel de bienvenida',
+      icon: Wine
     },
     {
       time: '7:30 PM',
       title: 'Cena',
-      description: 'Servicio de cena'
+      description: 'Servicio de cena',
+      icon: UtensilsCrossed
     },
     {
       time: '9:00 PM',
       title: 'Inicio de Fiesta',
-      description: '¡A bailar toda la noche!'
+      description: '¡A bailar toda la noche!',
+      icon: Music
     }
   ];
 
@@ -43,30 +47,34 @@ const Schedule = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          {events.map((event, index) => (
-            <div 
-              key={index}
-              className="romantic-card p-6 hover-lift"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0">
+          {events.map((event, index) => {
+            const IconComponent = event.icon;
+            return (
+              <div 
+                key={index}
+                className="romantic-card p-6 hover-lift text-center"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="flex flex-col items-center space-y-3">
                   <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
-                    <span className="text-primary font-bold text-sm">{event.time}</span>
+                    <IconComponent className="w-8 h-8 text-primary" />
+                  </div>
+                  
+                  <div>
+                    <h3 className="text-elegant text-xl font-semibold text-foreground mb-1">
+                      {event.title}
+                    </h3>
+                    <p className="text-primary font-bold text-sm mb-2">
+                      {event.time}
+                    </p>
+                    <p className="text-muted-foreground text-sm">
+                      {event.description}
+                    </p>
                   </div>
                 </div>
-                
-                <div className="flex-1">
-                  <h3 className="text-elegant text-xl font-semibold text-foreground mb-2">
-                    {event.title}
-                  </h3>
-                  <p className="text-muted-foreground text-sm">
-                    {event.description}
-                  </p>
-                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
