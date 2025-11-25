@@ -9,6 +9,12 @@ const GiftRegistry = () => {
       description: 'No. de Evento: 51764805',
       url: 'https://mesaderegalos.liverpool.com.mx/milistaderegalos/51764805',
       logo: liverpoolLogo
+    },
+    {
+      store: 'Amazon',
+      description: 'Mesa de Regalos',
+      url: 'https://www.amazon.com.mx/wedding/registry',
+      logo: null
     }
   ];
 
@@ -40,9 +46,11 @@ const GiftRegistry = () => {
               className="romantic-card p-8 text-center hover-lift group"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="flex justify-center mb-4">
-                <img src={registry.logo} alt="Liverpool logo" width={50} height={50} />
-              </div>
+              {registry.logo && (
+                <div className="flex justify-center mb-4">
+                  <img src={registry.logo} alt={`${registry.store} logo`} width={50} height={50} />
+                </div>
+              )}
               
               <h3 className="text-elegant text-xl font-semibold text-foreground mb-2">
                 {registry.store}

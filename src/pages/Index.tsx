@@ -3,6 +3,7 @@ import WeddingHero from '@/components/WeddingHero';
 import CountdownTimer from '@/components/CountdownTimer';
 import QuoteSection from '@/components/QuoteSection';
 import EventDetails from '@/components/EventDetails';
+import Schedule from '@/components/Schedule';
 import DressCode from '@/components/DressCode';
 import RSVPSection from '@/components/RSVPSection';
 import GiftRegistry from '@/components/GiftRegistry';
@@ -24,6 +25,9 @@ const Index = () => {
       
       {/* Event Details */}
       <EventDetails />
+      
+      {/* Schedule */}
+      <Schedule />
       
       {/* Dress Code */}
       <DressCode />
