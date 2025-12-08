@@ -1,6 +1,7 @@
 import React from 'react';
 import { Gift, ExternalLink } from 'lucide-react';
 import liverpoolLogo from '@/assets/liverpool.png';
+import amazonlogo from '@/assets/amazon.png';
 
 const GiftRegistry = () => {
   const registries = [
@@ -13,8 +14,8 @@ const GiftRegistry = () => {
     {
       store: 'Amazon',
       description: 'Mesa de Regalos',
-      url: 'https://www.amazon.com.mx/wedding/registry',
-      logo: null
+      url: 'https://www.amazon.com.mx/wedding/share/lucymaw',
+      logo: amazonlogo
     }
   ];
 
@@ -48,7 +49,7 @@ const GiftRegistry = () => {
             >
               {registry.logo && (
                 <div className="flex justify-center mb-4">
-                  <img src={registry.logo} alt={`${registry.store} logo`} width={50} height={50} />
+                  <img src={registry.logo} alt={`${registry.store} logo`} width={150} />
                 </div>
               )}
               
