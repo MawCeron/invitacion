@@ -11,8 +11,8 @@ const Schedule = () => {
     },
     {
       time: '5:00 PM',
-      title: 'Recepción',
-      description: 'Cervezas de bienvenida',
+      title: 'Bienvenida',
+      description: 'Entremos en ambiente',
       icon: Beer
     },
     {
@@ -44,11 +44,11 @@ const Schedule = () => {
           </div>
           
           <h2 className="text-elegant text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Horario del Día
+            Itinerario
           </h2>
           
           <p className="text-script text-2xl text-primary mb-6">
-            Programa de Eventos
+            Queremos compartir contigo este día, por eso aquí tienes el plan.
           </p>
         </div>
         

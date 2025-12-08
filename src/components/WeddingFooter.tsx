@@ -15,12 +15,11 @@ const WeddingFooter = () => {
           
           {/* Main Message */}
           <h2 className="text-script text-4xl md:text-5xl text-primary mb-6">
-            Gracias por ser parte de nuestra historia de amor
+            Gracias por ser parte de nuestra historia
           </h2>
           
           <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
-            Su amor, apoyo y presencia lo significan todo para nosotros. No podemos esperar a celebrar 
-            este nuevo capítulo de nuestras vidas con ustedes.
+            No podemos esperar a celebrar este nuevo capítulo de nuestras vidas con ustedes.
           </p>
           
           {/* Couple Signature */}
@@ -39,7 +38,7 @@ const WeddingFooter = () => {
               ¿Preguntas? Puedes contactarnos para aclararlas.
             </p>
             <p className="text-xs text-muted-foreground">
-              15 de Junio, 2024 • Verde Olista Terraza y Jardín
+              14 de Marzo, 2026 • Verde Olista Terraza y Jardín
             </p>
           </div>
         </div>

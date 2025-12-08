@@ -1,6 +1,7 @@
 import React from 'react';
 import { Heart } from 'lucide-react';
 import coupleImage from '../assets/lucymaw.jpg';
+import monogram from '../assets/monogram.png';
 
 const WeddingHero = () => {
   return (
@@ -17,21 +18,9 @@ const WeddingHero = () => {
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <div className="animate-fade-in">
           {/* Decorative Hearts */}
-          <div className="flex justify-center mb-8">
-            <Heart className="w-8 h-8 text-accent-gold animate-romantic-pulse mx-2" />
-            <Heart className="w-6 h-6 text-primary mt-1 animate-romantic-pulse mx-2" fill="currentColor" />
-            <Heart className="w-8 h-8 text-accent-gold animate-romantic-pulse mx-2" />
+          <div className="flex justify-center mb-10">
+            <img src={monogram} alt="Monogram" width={300} />
           </div>
-          
-          {/* Main Heading */}
-          <h1 className="text-elegant text-6xl md:text-8xl lg:text-9xl font-bold text-primary mb-4">
-            Lucy & Maw
-          </h1>
-          
-          {/* Romantic Script */}
-          <p className="text-script text-3xl md:text-4xl text-primary mb-8">
-            se casan
-          </p>
           
           {/* Wedding Date */}
           <div className="romantic-card inline-block px-12 py-6 mb-8">
