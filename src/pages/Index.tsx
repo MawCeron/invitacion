@@ -1,4 +1,5 @@
 import React from 'react';
+import { useSearchParams } from 'react-router-dom';
 import WeddingHero from '@/components/WeddingHero';
 import CountdownTimer from '@/components/CountdownTimer';
 import QuoteSection from '@/components/QuoteSection';
@@ -7,11 +8,13 @@ import Schedule from '@/components/Schedule';
 import DressCode from '@/components/DressCode';
 import RSVPSection from '@/components/RSVPSection';
 import GiftRegistry from '@/components/GiftRegistry';
-import PhotoAlbum from '@/components/PhotoAlbum';
 import MusicPlayer from '@/components/MusicPlayer';
 import WeddingFooter from '@/components/WeddingFooter';
 
 const Index = () => {
+  const [searchParams] = useSearchParams();
+  const invitadoId = searchParams.get('invitado');
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -33,7 +36,7 @@ const Index = () => {
       <DressCode />
       
       {/* RSVP Section */}
-      <RSVPSection />
+      <RSVPSection invitadoId={invitadoId} />
       
       {/* Gift Registry */}
       <GiftRegistry />
