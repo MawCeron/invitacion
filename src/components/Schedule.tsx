@@ -1,32 +1,38 @@
 import React from 'react';
-import { Clock, Heart, Wine, UtensilsCrossed, Music } from 'lucide-react';
+import { Clock, Heart, Beer, UtensilsCrossed, Music, PartyPopper } from 'lucide-react';
 
 const Schedule = () => {
   const events = [
     {
-      time: '5:00 PM',
+      time: '4.30 PM',
       title: 'Ceremonia Civil',
-      description: 'Ceremonia de boda civil',
+      description: 'El "Sí, Acepto"',
       icon: Heart
     },
     {
-      time: '6:00 PM',
+      time: '5:00 PM',
       title: 'Recepción',
-      description: 'Cóctel de bienvenida',
-      icon: Wine
+      description: 'Cervezas de bienvenida',
+      icon: Beer
     },
     {
-      time: '7:30 PM',
+      time: '6.00 PM',
       title: 'Cena',
-      description: 'Servicio de cena',
+      description: '¡A disfrutar la comida!',
       icon: UtensilsCrossed
     },
     {
-      time: '9:00 PM',
-      title: 'Inicio de Fiesta',
-      description: '¡A bailar toda la noche!',
+      time: '7:00 PM',
+      title: 'Baile de los Novios',
+      description: 'Al menos lo intentaremos',
       icon: Music
-    }
+    },
+    {
+      time: '7:30 PM',
+      title: '¡Empieza la Fiesta!',
+      description: 'A darlo todo en la pista',
+      icon: PartyPopper
+    } 
   ];
 
   return (
