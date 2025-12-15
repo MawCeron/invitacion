@@ -141,6 +141,10 @@ const RSVPSection = ({ invitadoId }: RSVPSectionProps) => {
             Tu presencia haría nuestro día aún mejor
           </p>
 
+          <p className="text-sm text-muted-foreground mt-6">
+            Con cariño les compaqrtimos que nuestra boda será un evento solo para adultos, esperamos puedan acompañarnos y agradecemos mucho su comprensión.
+          </p>
+
           <div className="romantic-card p-8 max-w-2xl mx-auto">
             {/* Nombre del invitado y lugares */}
             <p className="text-xl font-semibold text-foreground mb-6">
@@ -200,7 +204,7 @@ const RSVPSection = ({ invitadoId }: RSVPSectionProps) => {
           </div>
           
           <p className="text-sm text-muted-foreground mt-6">
-            Por favor confirma antes del 1° de Febrero, 2026
+            Por favor confirma antes del 1° de Febrero, 2026.
           </p>
         </div>
       </div>
