@@ -142,7 +142,7 @@ const RSVPSection = ({ invitadoId }: RSVPSectionProps) => {
           </p>
 
           <p className="text-sm text-muted-foreground mt-4 mb-8">
-            Con cariño les compaqrtimos que nuestra boda será un evento solo para adultos, esperamos puedan acompañarnos y agradecemos mucho su comprensión.
+            Con cariño les compartimos que nuestra boda será un evento solo para adultos, esperamos puedan acompañarnos y agradecemos mucho su comprensión.
           </p>
 
           <div className="romantic-card p-8 max-w-2xl mx-auto">
