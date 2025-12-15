@@ -141,7 +141,7 @@ const RSVPSection = ({ invitadoId }: RSVPSectionProps) => {
             Tu presencia haría nuestro día aún mejor
           </p>
 
-          <p className="text-sm text-muted-foreground mt-6">
+          <p className="text-sm text-muted-foreground mt-4 mb-8">
             Con cariño les compaqrtimos que nuestra boda será un evento solo para adultos, esperamos puedan acompañarnos y agradecemos mucho su comprensión.
           </p>
 
