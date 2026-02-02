@@ -11,6 +11,7 @@ interface Invitado {
   nombre: string;
   lugares_asignados: number;
   respuesta: string | null;
+  extension: string;
 }
 
 interface RSVPSectionProps {
@@ -94,6 +95,34 @@ const RSVPSection = ({ invitadoId }: RSVPSectionProps) => {
     );
   }
 
+  const handleConfirm = async (respuesta: 'asistire' | 'no_asistire') => {
+    const { error } = await supabase
+      .from('invitados')
+      .update({ respuesta })
+      .eq('id', invitado.id);
+
+    if (error) {
+      console.error('Error updating respuesta:', error);
+      toast({
+        title: 'Error',
+        description: 'Hubo un problema al guardar tu respuesta. Intenta de nuevo.',
+        variant: 'destructive',
+      });
+      return;
+    }
+
+    setInvitado({ ...invitado, respuesta });
+    toast({
+      title: respuesta === 'asistire' ? '¡Confirmado!' : 'Respuesta registrada',
+      description: respuesta === 'asistire' 
+        ? '¡Gracias por confirmar tu asistencia! 💕' 
+        : 'Gracias por avisarnos. Te extrañaremos.',
+    });
+  };
+
+  // Check if guest has extension enabled
+  const canStillConfirm = invitado.extension === 'si';
+
   return (
     <section className="py-20 px-4 romantic-gradient">
       <div className="max-w-4xl mx-auto text-center">
@@ -120,27 +149,71 @@ const RSVPSection = ({ invitadoId }: RSVPSectionProps) => {
               {invitado.nombre} ({getLugaresText(invitado.lugares_asignados)})
             </p>
 
-            {/* Período de confirmación cerrado */}
-            <div className="text-center">
-              <Lock className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
-              <h3 className="text-elegant text-xl font-semibold text-foreground mb-2">
-                Período de Confirmación Cerrado
-              </h3>
-              {invitado.respuesta ? (
-                <p className="text-muted-foreground">
-                  Tu respuesta registrada: <span className="font-semibold text-primary">
-                    {invitado.respuesta === 'asistire' ? '¡Asistirás! 💕' : 'No podrás asistir'}
-                  </span>
-                </p>
+            {canStillConfirm ? (
+              /* Guest with extension can still confirm */
+              invitado.respuesta ? (
+                <div className="text-center">
+                  <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
+                  <h3 className="text-elegant text-2xl font-semibold text-foreground mb-2">
+                    {invitado.respuesta === 'asistire' ? '¡Confirmado!' : 'Respuesta registrada'}
+                  </h3>
+                  <p className="text-muted-foreground">
+                    {invitado.respuesta === 'asistire' 
+                      ? '¡Gracias por confirmar tu asistencia! Te esperamos con mucha ilusión. 💕' 
+                      : 'Gracias por avisarnos. Lamentamos que no puedas acompañarnos.'}
+                  </p>
+                  <button
+                    onClick={() => setInvitado({ ...invitado, respuesta: null })}
+                    className="mt-4 text-sm text-primary underline hover:text-primary/80 transition-colors"
+                  >
+                    Cambiar respuesta
+                  </button>
+                </div>
               ) : (
-                <p className="text-muted-foreground">
-                  El período para confirmar asistencia ha finalizado.
+                <div className="space-y-4">
+                  <p className="text-muted-foreground mb-6">
+                    ¿Podrás acompañarnos en nuestra celebración?
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button
+                      onClick={() => handleConfirm('asistire')}
+                      className="romantic-button flex items-center justify-center gap-2"
+                    >
+                      <Heart className="w-5 h-5" />
+                      ¡Sí, asistiré!
+                    </button>
+                    <button
+                      onClick={() => handleConfirm('no_asistire')}
+                      className="px-6 py-3 rounded-lg border-2 border-muted text-muted-foreground hover:border-primary hover:text-primary transition-all duration-300"
+                    >
+                      No podré asistir
+                    </button>
+                  </div>
+                </div>
+              )
+            ) : (
+              /* Period closed for guests without extension */
+              <div className="text-center">
+                <Lock className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
+                <h3 className="text-elegant text-xl font-semibold text-foreground mb-2">
+                  Período de Confirmación Cerrado
+                </h3>
+                {invitado.respuesta ? (
+                  <p className="text-muted-foreground">
+                    Tu respuesta registrada: <span className="font-semibold text-primary">
+                      {invitado.respuesta === 'asistire' ? '¡Asistirás! 💕' : 'No podrás asistir'}
+                    </span>
+                  </p>
+                ) : (
+                  <p className="text-muted-foreground">
+                    El período para confirmar asistencia ha finalizado.
+                  </p>
+                )}
+                <p className="text-sm text-muted-foreground mt-4">
+                  Si tienes alguna duda, por favor contacta directamente a los novios.
                 </p>
-              )}
-              <p className="text-sm text-muted-foreground mt-4">
-                Si tienes alguna duda, por favor contacta directamente a los novios.
-              </p>
-            </div>
+              </div>
+            )}
           </div>
         </div>
       </div>

@@ -16,6 +16,7 @@ export type Database = {
     Tables: {
       invitados: {
         Row: {
+          extension: string
           id: string
           lugares_asignados: number
           nombre: string
@@ -23,6 +24,7 @@ export type Database = {
           updated_at: string | null
         }
         Insert: {
+          extension?: string
           id?: string
           lugares_asignados?: number
           nombre: string
@@ -30,6 +32,7 @@ export type Database = {
           updated_at?: string | null
         }
         Update: {
+          extension?: string
           id?: string
           lugares_asignados?: number
           nombre?: string
