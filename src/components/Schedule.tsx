@@ -4,13 +4,13 @@ import { Clock, Heart, Beer, UtensilsCrossed, Music, PartyPopper } from 'lucide-
 const Schedule = () => {
   const events = [
     {
-      time: '4.30 PM',
+      time: '5.00 PM',
       title: 'Ceremonia Civil',
       description: 'El "Sí, Acepto"',
       icon: Heart
     },
     {
-      time: '5:00 PM',
+      time: '5:30 PM',
       title: 'Bienvenida',
       description: 'Entremos en ambiente',
       icon: Beer
